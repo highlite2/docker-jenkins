@@ -3,6 +3,7 @@ COMPOSE_FILE := docker-compose.yml
 
 .PHONE: run
 run:
+	docker volume create --name highlite2-docker-jenkins-home
 	docker-compose pull
 	docker-compose -p $(PROJECT_NAME) -f $(COMPOSE_FILE) up -d
 
