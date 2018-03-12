@@ -2,15 +2,15 @@ version: '2'
 
 volumes:
 
-  highlite2-docker-jenkins-home:
+  highlite2-jenkins-home:
     external: true
 
 services:
 
-  docker-jenkins:
+  jenkins:
     image: oliosinter/jenkins:jenkins_2.109
     volumes:
-      - highlite2-docker-jenkins-home:/var/jenkins_home
+      - highlite2-jenkins-home:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       - "9000:8080"
