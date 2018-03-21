@@ -1,6 +1,13 @@
-# Highlite2 Jenkins
+## Highlite Spb
 
-Highlite SPb uses Jenkins for Continuous Delivery. Jenkins runs in a docker container using
+[Highlite Spb](http://highlite-spb.ru) is a show equipment store. It is a eCommerce project, consisting of following parts:
+- [highlite2-sylius](https://github.com/oliosinter/highlite2-sylius) - online store, based on [Sylius](https://sylius.com) eCommerce framework;
+- [highlite2-import](https://github.com/oliosinter/highlite2-import) - product import tool, written in Golang;
+- [highlite2-jenkins](https://github.com/oliosinter/highlite2-jenkins) - continuous delivery.
+
+## Highlite2 Jenkins
+
+Highlite Spb uses Jenkins for Continuous Delivery. Jenkins runs in a docker container using
 [dockerfile-jenkins](https://github.com/oliosinter/dockerfile-jenkins) as a base image.
 
 ## Usage
